@@ -10,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>events</title>
     <style>
-      body{
+      body,*{
         margin: 0;
         padding: 0;
       }
       :root{
         --bg:#efe9e3;
-        --nc:#e7e2dc;
+        --nc:#f9f2ec;
+        /* --nc:#f2ebe5; */
       }
       @font-face {
         font-family: new;
@@ -33,6 +34,27 @@
         text-shadow: 2px 2px 12px lightblue;
         
       }
+      .img{
+        border-left: 2px solid red;
+      }
+      .img:hover{
+        border-left-color:black ;
+        transform: scale(1,1);
+      }
+      input[type=email]:focus{
+        background-color: #f9f2ec;
+        border-radius: 12px;
+      }
+      input[type=email]:invalid{
+     
+        background-color: rgb(248, 110, 110);
+
+      }
+      input[type=email]:valid{
+     
+     background-color: rgb(109, 221, 221);
+
+   }
     </style>
 </head>
 <body>
@@ -41,7 +63,7 @@
     <nav class="navbar navbar-expand-md" style="background-color: var(--nc); ">
       <div class="container-fluid">
          <a class="navbar-brand active" href="#">
-          <img src="img/home/StartupistanLogo.png" class=" ms-md-5 m-1" style="height:60px;" alt="">
+          <img src="img/home/StartupistanLogo.png" class=" ms-md-5 m-1 me-0" style="height:60px;" alt="">
          </a>
           <button class="navbar-toggler navbar-toggler-md " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,10 +71,10 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end p-3 fw-bold fs-6" id="navbarNavAltMarkup">
            <div class="navbar-nav">
-            <a class="nav-link m-4  text-primary mb-0 mt-1 p-2" href="about.html">ABOUT</a>
-            <a class="nav-link m-4  text-primary mb-0 mt-1 p-2" href="#">EVENTS</a>
-            <a class="nav-link m-4  text-primary mb-0 mt-1 p-2" href="#">PROPGRAMS</a>
-            <a class="nav-link m-4  text-primary mb-0 mt-1 p-2 bg-primary text-light" style="border-radius:10px ; ">APPLY NOW</a>
+            <a class="nav-link m-4 text-primary mb-0 mt-1 p-2" href="about.html">ABOUT</a>
+            <a class="nav-link m-4 text-primary mb-0 mt-1 p-2" href="events.html">EVENTS</a>
+            <a class="nav-link m-4 text-primary mb-0 mt-1 p-2" href="#">PROPGRAMS</a>
+            <a class="nav-link m-4 text-primary mb-0 mt-1 p-2 bg-primary text-light" style="border-radius:10px ; ">APPLY NOW</a>
           </div>
         </div>
       </div>
@@ -60,9 +82,110 @@
 
     
     <!-- Section First Home page  -->
-    
+    <div class="home pt-5"style="background-image: url('img/events/Screenshot\ 2022-08-30\ at\ 05-55-11\ Events\ —\ Startupistan\ -\ Digital\ Skills\ Academy.png');background-repeat: no-repeat; background-position: center;">
+      <div class="container" >
+            <div class="row" >
+              <div class="col-sm-5 p-5 mb-5">
+                <h1 class="text-primary display-5 text-uppercase fw-bold">Startupistan </h1>
+                <span class="text-light bg-primary display-5 text-uppercase fw-bold px-2 ">Events</span>
+                <h5 class=" pt-3 text-primary">News, events and <br> projects are happening <br> all the time. </h5>
+                <p class=" pt-3 text-primary">Stay up to date with our activities here.</p>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    <!-- links section like card -->
+    <div class="container-fluid">
+         <!-- first -->
+            <div class="row py-4 mx-3 ms-sm-5  img" >
+              <div class="col-sm-3 imglink">
+                <a href="#"><img src="img/events/FB+post+Entrepreneurship+and+the+Future+of+Startups+in+Afgha.png" style="width:100%;" alt=""></a>
+              </div>
+              <div class="col-sm">
+                <a href="#" class="fw-bold text-dark">Entrepreneurship & the Future of Startups in Afghanistan</a>
+                <h4> Wednesday, December 2, 2020 15:30 - 18:00 Netlinks LTD (map) </h4>
+                <a href="#" class="text-dark"> Google Calendar - ICS </a><br>
+                <button class="btn btn-outline-dark mt-3 p-3 px-5">VIEW EVENT -></button>
+              </div>
+            </div>
+              <!-- Second -->
+              <div class="row py-4 mx-3  ms-sm-5  img" >
+                <div class="col-sm-3 imglink">
+                  <a href="#"><img src="img/events/blockchain+for+good.jpeg" class="w-100 h-100" alt=""></a>
+                </div>
+                <div class="col-sm">
+                  <a href="#" class="fw-bold text-dark">Webinar Series - Blockchain for Good 101</a><br>
+                  <h4 class="d-inline">   Wednesday, November 18, 2020 17:00 18:00   </h4>
+                  <a href="#" class="text-dark">  Google Calendar ICS  </a><br>
+                  <button class="btn btn-outline-dark mt-3 p-3 px-5">VIEW EVENT -></button>
+                </div>
+              </div>
+                <!-- Third -->
+            <div class="row py-4 mx-3 ms-sm-5  img" >
+              <div class="col-sm-3 imglink">
+                <a href="#"><img src="img/events/Add+a+heading+(4).png" style="width:100%;" alt=""></a>
+              </div>
+              <div class="col-sm">
+                <a href="#" class="fw-bold text-dark">Webinar Series - Intro to Online Marketing and the Customer Journey</a><br>
+                <h4 class="d-inline">  Wednesday, November 4, 2020 17:00 18:00   </h4>
+                <a href="#" class="text-dark"> Google Calendar - ICS </a><br>
+                <button class="btn btn-outline-dark mt-3 p-3 px-5">VIEW EVENT -></button>
+              </div>
+            </div>
+              <!-- fourth -->
+              <div class="row py-4 mx-3 ms-sm-5  img" >
+                <div class="col-sm-3 imglink">
+                  <a href="#"><img src="img/events/2+(1).png" style="width:100%;" alt=""></a>
+                </div>
+                <div class="col-sm">
+                  <a href="#" class="fw-bold text-dark">Webinar Series - Web Development - The Basics</a><br>
+                  <h4 class="d-inline">  Wednesday, October 21, 2020 18:00 19:00   </h4>
+                <a href="#" class="text-dark"> Google Calendar - ICS </a><br>
+                  <button class="btn btn-outline-dark mt-3 p-3 px-5">VIEW EVENT -></button>
+                </div>
+              </div>
+                <!-- Fifth -->
+            <div class="row py-4 mx-3 ms-sm-5  img" >
+              <div class="col-sm-3 imglink">
+                <a href="#"><img src="img/events/Facebook+Blue+print+event+(1).png" style="width:100%;" alt=""></a>
+              </div>
+              <div class="col-sm">
+                <a href="#" class="fw-bold text-dark">Webinar Series - Power your advertising with Facebook Blueprint Academy</a><br>
+                <h4 class="d-inline">  Thursday, October 8, 2020 14:30 15:30   </h4>
+                <a href="#" class="text-dark"> Google Calendar - ICS </a><br>
+                <button class="btn btn-outline-dark mt-3 p-3 px-5">VIEW EVENT -></button>
+              </div>
+            </div>
+               <!-- sixth -->
+               <div class="row py-4 mx-3 ms-sm-5  img" >
+                <div class="col-sm-3 imglink">
+                  <a href="#"><img src="img/events/96937209_10156757043557142_8340194974020665344_o+(1).jpg" style="width:100%;" alt=""></a>
+                </div>
+                <div class="col-sm">
+                  <a href="#" class="fw-bold text-dark">Hack the Crisis Afghanistan</a><br>
+                  <h4 class="d-inline">  Tue, Jun 9, 2020 15:00 Fri, Jun 12, 2020 16:00   </h4>
+                  <a href="#" class="text-dark"> Google Calendar - ICS </a><br>
+                  <button class="btn btn-outline-dark mt-3 p-3 px-5">VIEW EVENT -></button>
+                </div>
+              </div>
+                 <!-- seventh -->
+            <div class="row py-4 mx-3 ms-sm-5  img" >
+              <div class="col-sm-3 imglink">
+                <a href="#"><img src="img/events/101251386_837652423393630_3915434092753059840_o.jpg" style="width:100%;" alt=""></a>
+              </div>
+              <div class="col-sm">
+                <a href="#" class="fw-bold text-dark">Webinar Series - Power your advertising with Facebook Blueprint Academy</a><br>
+                <h4 class="d-inline">  Sunday, May 31, 2020 15:00 16:00   </h4>
+                <a href="#" class="text-dark"> Google Calendar - ICS </a><br>
+                <button class="btn btn-outline-dark mt-3 p-3 px-5">VIEW EVENT -></button>
+              </div>
+            </div>
+            
+          </div>
+
     <!-- The footer section  -->
-                <div class="footer bg-primary p-3 p-sm-5" >
+               <div class="footer bg-primary p-3 p-sm-5" >
                   
                        <div class="row">
                             <div class="col-lg-6 ">
@@ -80,9 +203,11 @@
                             <div class="col-lg-6">
                               <h4 class="text-light text-uppercase">join our community</h4><br>
                               <p class="text-light h5 text-uppercase" style="line-height:40px ;">Be the first to get invited to our courses & even learn about what we are up to <br>and the oppotunities to get involved</p>
-                                  
-                  <input type="email" class="shadow p-3 px-5" style="" name="email" placeholder="Email Addrss" id="">
-                  <button class="btn w-md-25 p-3 btn-lg btn-outline-light mb-1">Subscribe</button><br>
+                       
+                  <input type="email" class="shadow p-3 px-5 x-5" style="" name="email"
+                   placeholder="Email Addrss" id="" pattern="[a-z , 0-9 , @ , . ]*" >
+                  <button class="btn w-md-25 p-3 btn-lg btn-outline-light mb-1">Subscribe</button>
+               <br>
                              <div class="row">
                                 <div class="col mt-4">
                                   <a href="#"class="bg-light ps-2 pb-2 shadow p-1 me-2 rounded-pill">
