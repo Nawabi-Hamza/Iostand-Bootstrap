@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  :root{
+    --bg:#efe9e3;
+    --nc:#e7e2dc;
+    --eb: #fdf6f0;
+  }
+  @font-face {
+    font-family: new;
+    src: url();
+  }
+  a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:blanchedalmond;
+    font-size: 24px;
+  }
+  a:hover{
+ 
+    text-shadow: 2px 2px 12px lightblue;
+    
+  }
+  .img{
+    border-left: 2px solid blue;
+  }
+  .img:hover{
+    border-left-color:black ;
+    transform: scale(1,1);
+  }
+  input[type=email]:focus{
+    background-color: #f9f2ec;
+    border-radius: 12px;
+  }
+  input[type=email]:invalid{
+ 
+    background-color: rgb(248, 110, 110);
+
+  }
+  input[type=email]:valid{
+ 
+ background-color: rgb(109, 221, 221);
+
+}
