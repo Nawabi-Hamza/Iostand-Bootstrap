@@ -27,8 +27,11 @@ body{
   }
   .img:hover{
     border-left-color:black ;
-    transform: scale(1,1);
+    transform: translate(2px);
+   
+
   }
+
   input[type=email]:focus{
     background-color: #f9f2ec;
     border-radius: 12px;
