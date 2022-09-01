@@ -46,3 +46,9 @@ body{
  background-color: rgb(109, 221, 221);
 
 }
+
+
+/* our student comment shadow*/
+#new{
+  box-shadow: 2px 2px 12px cornflowerblue;
+}
