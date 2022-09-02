@@ -52,3 +52,10 @@ body{
 #new{
   box-shadow: 2px 2px 12px cornflowerblue;
 }
+#massage{
+  filter:opacity(0.2);
+
+}
+#massage:hover{
+  filter:opacity(1);
+}
