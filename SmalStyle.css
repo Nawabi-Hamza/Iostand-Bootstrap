@@ -52,3 +52,31 @@ body{
 #new{
   box-shadow: 2px 2px 12px cornflowerblue;
 }
+#massage{
+  filter:opacity(0.2);
+
+}
+#massage:hover{
+  filter:opacity(1);
+}
+
+#titlehider{
+  display:none ;
+  position: absolute;
+  background-color: white;
+  margin: 10px;
+  padding:10px;
+  color:black;
+  text-shadow: none;
+  text-transform: uppercase;
+
+}
+#parent:hover #titlehider{
+      display: block;
+
+}
+
+#icon a:hover svg{
+  color:black;
+
+}
