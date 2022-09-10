@@ -15,7 +15,7 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     color:blanchedalmond;
-    font-size: 24px;
+    font-size: 20px;
   }
   a:hover{
  
@@ -75,8 +75,16 @@ body{
       display: block;
 
 }
-
+#icon:hover svg{
+  color:rgb(68, 52, 52,0.3);
+}
 #icon a:hover svg{
   color:black;
+  animation: icon 0.6s infinite;
 
+}
+@keyframes icon {
+  from{transform:translate(0px) ;}
+  to{transform:translate(0px,-4px) ;}
+  
 }
